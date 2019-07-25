@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="76b19422-81ef-4859-8b2d-005f002c1b9e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="304"/>
+	<queryString>
+		<![CDATA[SELECT
+     bulletin.`id` AS bulletin_id,
+     bulletin.`id_etu` AS bulletin_id_etu,
+     bulletin.`nom` AS bulletin_nom,
+     bulletin.`prenom` AS bulletin_prenom,
+     bulletin.`classe` AS bulletin_classe,
+     bulletin.`filiere` AS bulletin_filiere,
+     bulletin.`annee` AS bulletin_annee,
+     bulletin.`semestre` AS bulletin_semestre,
+     bulletin.`java` AS bulletin_java,
+     bulletin.`langc` AS bulletin_langc,
+     bulletin.`php` AS bulletin_php,
+     bulletin.`sys` AS bulletin_sys,
+     bulletin.`math` AS bulletin_math,
+     bulletin.`reseau` AS bulletin_reseau,
+     bulletin.`somme` AS bulletin_somme,
+     bulletin.`moy` AS bulletin_moy,
+     bulletin.`etat` AS bulletin_etat
+FROM
+     `bulletin` bulletin]]>
+	</queryString>
+	<field name="bulletin_id" class="java.lang.Integer"/>
+	<field name="bulletin_id_etu" class="java.lang.Integer"/>
+	<field name="bulletin_nom" class="java.lang.String"/>
+	<field name="bulletin_prenom" class="java.lang.String"/>
+	<field name="bulletin_classe" class="java.lang.String"/>
+	<field name="bulletin_filiere" class="java.lang.String"/>
+	<field name="bulletin_annee" class="java.lang.String"/>
+	<field name="bulletin_semestre" class="java.lang.String"/>
+	<field name="bulletin_java" class="java.lang.Float"/>
+	<field name="bulletin_langc" class="java.lang.Float"/>
+	<field name="bulletin_php" class="java.lang.Float"/>
+	<field name="bulletin_sys" class="java.lang.Float"/>
+	<field name="bulletin_math" class="java.lang.Float"/>
+	<field name="bulletin_reseau" class="java.lang.Float"/>
+	<field name="bulletin_somme" class="java.lang.Float"/>
+	<field name="bulletin_moy" class="java.lang.Float"/>
+	<field name="bulletin_etat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="33" uuid="1f0134ef-33d3-492c-994c-f9cee40f8920"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Institut Supérieur de Technologie Appliquées]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="33" width="802" height="41" uuid="387137de-4543-4acd-8acc-5c05ae51b10c"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[( Techno LAB - ISTA )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="74" width="802" height="20" backcolor="#9900FF" uuid="5aaf91af-cacc-4689-b3b5-765d11385ace"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Formation continue et specialisée, Expertise, fourniture et Presentations en Nouvelles Technologies Techniques Commerciales]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="183" splitType="Stretch">
+			<staticText>
+				<reportElement x="429" y="20" width="171" height="32" uuid="1dbf987d-089f-4bca-af99-15883f548fc8"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Relevé de Notes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="113" width="120" height="20" uuid="936349a2-e2ca-4630-8247-78249556f26d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[De l'etudiant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="148" width="395" height="20" uuid="5b598ca4-3055-47f6-97d3-214cfb142f83"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Programme / Diplome préparé : Sciences et Techniques]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="52" width="188" height="25" uuid="f97d213a-dbe7-418f-810d-6e2e98b97699"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Année Academique]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="577" y="113" width="83" height="20" uuid="cb07a8fd-f2c0-4d7c-99d6-66f1b6e5d39c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Spécialite :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="577" y="148" width="83" height="20" uuid="02733d66-bd8e-4685-b5e3-040c53953905"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Classe :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="670" y="113" width="100" height="20" uuid="90af2db2-f659-4b07-beb7-eac29599d60c"/>
+				<textFieldExpression><![CDATA[$F{bulletin_filiere}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="290" splitType="Stretch">
+			<rectangle>
+				<reportElement x="8" y="12" width="791" height="258" uuid="248147ef-767e-4d2e-a8b9-b5c470a7acfb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="32" y="47" width="39" height="20" uuid="9c32b91f-6628-4bd1-a8ca-8b966d0901eb"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UE01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="67" width="39" height="20" uuid="035aa6b6-92af-4a91-ba0d-953e824e1dfe"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UE02]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="87" width="39" height="20" uuid="59ab2889-84e3-4e63-91ef-4ab90a470889"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UE03]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="107" width="39" height="20" uuid="0b8ff651-2825-4795-9b71-c96e6fdaea9b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UE04]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="127" width="39" height="20" uuid="c0fae586-788c-4c64-8823-d2a9537ebbf9"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UE05]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="147" width="39" height="20" uuid="5182e820-7552-4fab-906b-ad8cdf1d47bc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UE06]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="67" width="84" height="20" uuid="4e514050-a377-4966-8040-d5b6c68a569c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[C++]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="87" width="84" height="20" uuid="72cad79f-4394-4c88-bae6-cb497bb77b0d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="147" width="84" height="20" uuid="b430e01a-ae6a-41bf-8f12-8442a31c50db"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SYS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="107" width="84" height="20" uuid="85440cb5-165a-4f85-beaf-adbf19c2512a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SYS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="47" width="84" height="20" uuid="437ab17a-6870-4a53-bc10-4b42bcf75945"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Java]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="127" width="84" height="20" uuid="82124844-ca86-4487-a79b-7575c59c5fd5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Math]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="29" width="47" height="20" uuid="6b77f97b-60c8-492a-8bf2-42527924f61d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Coef.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="70" width="39" height="20" uuid="19bc9397-f621-429a-b759-e7cac5008dd4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="90" width="39" height="20" uuid="b5bed88c-2242-4138-ae6f-39c6c7bec357"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="150" width="39" height="20" uuid="41c655fb-61a1-469e-b55c-3b6be948b37f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="110" width="39" height="20" uuid="957dbdbd-9033-4994-96e5-e913c0a66628"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="50" width="39" height="20" uuid="2d0cd40c-4098-46eb-9994-6cb8b79d4bbb"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="130" width="39" height="20" uuid="74b3ba1f-0e58-47d4-b9ca-577ea537969d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="90" width="62" height="20" uuid="ab7013cc-26b4-4aa3-adf2-416228943ff6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="110" width="62" height="20" uuid="f514d45a-380c-4d22-bd5a-aa8f17ca2419"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="150" width="62" height="20" uuid="706b6209-485c-47e3-8c2d-905b4b714ecf"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="130" width="62" height="20" uuid="ba95e583-b824-4bca-90df-e65a6bd248cb"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="50" width="62" height="20" uuid="ef20fb15-e966-4bd6-9cf0-e353d054f938"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="70" width="62" height="20" uuid="1970f151-acc5-4d5e-b871-c305875d6f6b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="182" width="78" height="20" uuid="75ab20c2-dc7c-42e0-86a9-fb731b445a80"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="218" width="297" height="20" uuid="23f86eee-b68d-4342-951a-13177963dc47"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Moyenne du premier Semestre ****** / 20]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="382" y="51" width="37" height="20" uuid="eb915b7c-b0e9-4df5-bd59-905b9fa24be0"/>
+				<textFieldExpression><![CDATA[$F{bulletin_java}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="70" width="37" height="20" uuid="916e6d8e-ac39-4bd1-8ce0-15e420182c82"/>
+				<textFieldExpression><![CDATA[$F{bulletin_langc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="91" width="37" height="20" uuid="f0d333d3-6b4f-4cc7-80cb-bee261e1d1d2"/>
+				<textFieldExpression><![CDATA[$F{bulletin_php}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="109" width="37" height="20" uuid="403bcd02-3820-4c88-8eee-8e42f30ae84e"/>
+				<textFieldExpression><![CDATA[$F{bulletin_sys}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="129" width="37" height="20" uuid="146aee2d-04e1-401e-aacb-b96375831f22"/>
+				<textFieldExpression><![CDATA[$F{bulletin_math}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="149" width="37" height="20" uuid="e35e8864-2ab6-4f40-92d6-d840dc0ee101"/>
+				<textFieldExpression><![CDATA[$F{bulletin_reseau}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="89" width="37" height="20" uuid="07f2e50b-6d37-4d15-a809-029b6242e589"/>
+				<textFieldExpression><![CDATA[$F{bulletin_java}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="109" width="37" height="20" uuid="461e2560-b927-4b3e-8530-407f3248bd9b"/>
+				<textFieldExpression><![CDATA[$F{bulletin_langc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="47" width="37" height="20" uuid="998ae261-12a1-4409-95ed-b6a2c773f86a"/>
+				<textFieldExpression><![CDATA[$F{bulletin_php}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="149" width="37" height="20" uuid="b3b6404c-8e0c-49b3-8df5-6b7b42260124"/>
+				<textFieldExpression><![CDATA[$F{bulletin_sys}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="69" width="37" height="20" uuid="aba367ef-7c04-4172-9c93-f801e11d445e"/>
+				<textFieldExpression><![CDATA[$F{bulletin_math}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="130" width="37" height="20" uuid="a462dffa-3e47-4deb-89b6-a74908df836c"/>
+				<textFieldExpression><![CDATA[$F{bulletin_reseau}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="11" width="794" height="10" uuid="25d86f30-e1f3-4848-ab13-dc073a887518"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Agrément Création : N°0699/98 MESSRS - Ouvertures: N° 1529/99 6 2285 Systeme LMD - TEL 76 55 27 39]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="21" width="794" height="14" uuid="83afdc89-52e9-486d-867f-cb18514875ca"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[BP : E3123 - TEL : 20 29 19 44 - FAX : 20 29 30 66 - Site : www.technolab-ista.com/ Email : technolaba@gmail]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

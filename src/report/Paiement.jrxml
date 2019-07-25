@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="76b19422-81ef-4859-8b2d-005f002c1b9e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="303"/>
+	<queryString>
+		<![CDATA[SELECT
+     paiement.`id` AS paiement_id,
+     paiement.`id_etu` AS paiement_id_etu,
+     paiement.`nom` AS paiement_nom,
+     paiement.`prenom` AS paiement_prenom,
+     paiement.`classe` AS paiement_classe,
+     paiement.`filiere` AS paiement_filiere,
+     paiement.`annee` AS paiement_annee,
+     paiement.`montant` AS paiement_montant,
+     paiement.`dateIns` AS paiement_dateIns
+FROM
+     `paiement` paiement]]>
+	</queryString>
+	<field name="paiement_id" class="java.lang.Integer"/>
+	<field name="paiement_id_etu" class="java.lang.Integer"/>
+	<field name="paiement_nom" class="java.lang.String"/>
+	<field name="paiement_prenom" class="java.lang.String"/>
+	<field name="paiement_classe" class="java.lang.String"/>
+	<field name="paiement_filiere" class="java.lang.String"/>
+	<field name="paiement_annee" class="java.lang.String"/>
+	<field name="paiement_montant" class="java.lang.String"/>
+	<field name="paiement_dateIns" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="58" y="0" width="484" height="33" uuid="1f0134ef-33d3-492c-994c-f9cee40f8920"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Institut Supérieur de Technologie Appliquées]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="33" width="484" height="41" uuid="387137de-4543-4acd-8acc-5c05ae51b10c"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[( Techno LAB - ISTA )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="74" width="542" height="20" backcolor="#9900FF" uuid="5aaf91af-cacc-4689-b3b5-765d11385ace"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Formation continue et specialisée, Expertise, fourniture et Presentations en Nouvelles Technologies Techniques Commerciales]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="197" splitType="Stretch">
+			<staticText>
+				<reportElement x="131" y="82" width="43" height="20" uuid="bf75f721-5343-40bf-8ed4-1a9e389683f7"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DOIT :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="3" width="58" height="20" uuid="1dbf987d-089f-4bca-af99-15883f548fc8"/>
+				<text><![CDATA[Bamako, le ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="51" width="98" height="20" uuid="936349a2-e2ca-4630-8247-78249556f26d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAIEMENT N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="51" width="58" height="20" uuid="c1cbe9c3-4886-4e5c-991d-fa8e326d43cb"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[L-ISTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="114" width="456" height="23" uuid="ad431d54-a3c3-4176-bc08-f06109ed64a7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POUR LE PAIEMENT DES FRAIS DE FORMATIONS SPECIALISEE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="147" width="67" height="20" uuid="5b598ca4-3055-47f6-97d3-214cfb142f83"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FILIERE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="147" width="64" height="20" uuid="2fab54cd-b4d1-426e-9b45-2f20540e0711"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLASSE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="170" width="151" height="20" uuid="45ce7325-ec71-4406-a6ea-993bb7651883"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Année Academique :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="336" y="170" width="100" height="20" uuid="e496c70e-0473-48f3-9615-a9c05b01ec8c"/>
+				<textFieldExpression><![CDATA[$F{paiement_annee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="147" width="100" height="20" uuid="f87b6365-e647-4001-9cb3-8e7072ff404d"/>
+				<textFieldExpression><![CDATA[$F{paiement_classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="147" width="100" height="20" uuid="c52e3b08-126a-4b65-9bc6-ed9e451bf340"/>
+				<textFieldExpression><![CDATA[$F{paiement_filiere}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="82" width="100" height="20" uuid="cf70a1a9-f87c-4419-a95d-b34b0be94bee"/>
+				<textFieldExpression><![CDATA[$F{paiement_nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="82" width="100" height="20" uuid="b3eee771-d682-4baf-a0d5-4fe7a7f8296a"/>
+				<textFieldExpression><![CDATA[$F{paiement_prenom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="393" y="3" width="100" height="20" uuid="cd953caa-9ca1-4104-80aa-595b75ceb1ad"/>
+				<textFieldExpression><![CDATA[$F{paiement_dateIns}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="51" width="18" height="20" uuid="c871fe82-d68f-4c06-b0ea-43523baeefd4"/>
+				<textFieldExpression><![CDATA[$F{paiement_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="9" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="290" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="12" width="555" height="177" uuid="248147ef-767e-4d2e-a8b9-b5c470a7acfb"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="49" width="555" height="1" uuid="cda06fac-0497-40be-80c4-375c7185a1c1"/>
+			</line>
+			<line>
+				<reportElement x="458" y="12" width="1" height="177" uuid="40675024-3c8d-4f1f-bbb1-cabc81347899"/>
+			</line>
+			<staticText>
+				<reportElement x="11" y="13" width="100" height="16" uuid="c62e0d20-9d5f-4fdc-8480-7cbd917845aa"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MODULE DE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="33" width="100" height="16" uuid="3cb2b3b3-2100-4439-be2f-3abf7123ee42"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="17" width="72" height="16" uuid="f2adedc4-f84d-4ca1-bc26-c1c33a1f4ec0"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="69" width="210" height="19" uuid="10ece6bd-50e5-49c4-b093-8806b5421b91"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMATION SPECIALISEE VERS :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="50" width="189" height="19" uuid="6b8a44bd-2ce0-4222-86f5-12e915b8228b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAIEMENT POUR UNE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="159" width="555" height="1" uuid="054612a3-118f-478e-b8a6-2d11d3843b0f"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="160" width="189" height="19" uuid="f1f115f3-8e6e-4ebc-b902-a55a93c845aa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL HT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="234" width="110" height="21" uuid="499a5eb1-aa43-4b94-a48f-e5300499e405"/>
+				<textElement>
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[TECHNOLAB]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="154" y="107" width="100" height="20" uuid="5d28887e-cb3a-40a2-92c7-d1f1735603d0"/>
+				<textFieldExpression><![CDATA[$F{paiement_classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="11" y="107" width="100" height="20" uuid="375293ce-7bbd-4fbc-9163-b0b886842865"/>
+				<textFieldExpression><![CDATA[$F{paiement_filiere}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="107" width="83" height="20" uuid="95cce512-872e-45a7-b439-769c821e6497"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{paiement_montant}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="0" width="537" height="25" uuid="25d86f30-e1f3-4848-ab13-dc073a887518"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Agrément Création : N°0699/98 MESSRS - Ouvertures: N° 1529/99 6 2285 Systeme LMD - TEL 76 55 27 39]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="21" width="537" height="25" uuid="83afdc89-52e9-486d-867f-cb18514875ca"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[BP : E3123 - TEL : 20 29 19 44 - FAX : 20 29 30 66 - Site : www.technolab-ista.com/ Email : technolaba@gmail]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

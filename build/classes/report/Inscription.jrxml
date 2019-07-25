@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="76b19422-81ef-4859-8b2d-005f002c1b9e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="324"/>
+	<queryString>
+		<![CDATA[SELECT
+     inscription.`id` AS inscription_id,
+     inscription.`id_etu` AS inscription_id_etu,
+     inscription.`nom` AS inscription_nom,
+     inscription.`prenom` AS inscription_prenom,
+     inscription.`classe` AS inscription_classe,
+     inscription.`filiere` AS inscription_filiere,
+     inscription.`annee` AS inscription_annee,
+     inscription.`fraisIns` AS inscription_fraisIns,
+     inscription.`fraisAca` AS inscription_fraisAca,
+     inscription.`dateIns` AS inscription_dateIns
+FROM
+     `inscription` inscription]]>
+	</queryString>
+	<field name="inscription_id" class="java.lang.Integer"/>
+	<field name="inscription_id_etu" class="java.lang.Integer"/>
+	<field name="inscription_nom" class="java.lang.String"/>
+	<field name="inscription_prenom" class="java.lang.String"/>
+	<field name="inscription_classe" class="java.lang.String"/>
+	<field name="inscription_filiere" class="java.lang.String"/>
+	<field name="inscription_annee" class="java.lang.String"/>
+	<field name="inscription_fraisIns" class="java.lang.String"/>
+	<field name="inscription_fraisAca" class="java.lang.String"/>
+	<field name="inscription_dateIns" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="58" y="0" width="484" height="33" uuid="1f0134ef-33d3-492c-994c-f9cee40f8920"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Institut Supérieur de Technologie Appliquées]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="33" width="484" height="41" uuid="387137de-4543-4acd-8acc-5c05ae51b10c"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[( Techno LAB - ISTA )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="74" width="542" height="20" backcolor="#9900FF" uuid="5aaf91af-cacc-4689-b3b5-765d11385ace"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Formation continue et specialisée, Expertise, fourniture et Presentations en Nouvelles Technologies Techniques Commerciales]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="197" splitType="Stretch">
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="383" y="3" width="100" height="20" uuid="1fbe6729-9480-4251-9e46-409d8e9b96eb"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="131" y="82" width="43" height="20" uuid="bf75f721-5343-40bf-8ed4-1a9e389683f7"/>
+				<textElement>
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DOIT :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="3" width="58" height="20" uuid="1dbf987d-089f-4bca-af99-15883f548fc8"/>
+				<text><![CDATA[Bamako, le ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="51" width="67" height="20" uuid="936349a2-e2ca-4630-8247-78249556f26d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACTURE N]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="51" width="58" height="20" uuid="c1cbe9c3-4886-4e5c-991d-fa8e326d43cb"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[L-ISTA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="271" y="51" width="29" height="20" uuid="e1b87665-adde-40ec-8373-345c20249127"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="82" width="54" height="20" uuid="c7820aed-f55c-4667-b49f-1334fc95b33a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="82" width="65" height="20" uuid="1e02f053-f76e-437a-8f69-34fd5c6c90f7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_prenom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="58" y="114" width="456" height="23" uuid="ad431d54-a3c3-4176-bc08-f06109ed64a7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POUR LE PAIEMENT DES FRAIS DE FORMATIONS SPECIALISEE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="147" width="67" height="20" uuid="5b598ca4-3055-47f6-97d3-214cfb142f83"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FILIERE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="147" width="64" height="20" uuid="2fab54cd-b4d1-426e-9b45-2f20540e0711"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLASSE :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="147" width="100" height="20" uuid="f0f5cb12-031d-40c9-8fe9-67c995e39fa6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_filiere}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="147" width="86" height="20" uuid="b5b069b5-e9dc-4443-b55d-c9c92eca0504"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_classe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="174" y="170" width="151" height="20" backcolor="#66FF00" uuid="45ce7325-ec71-4406-a6ea-993bb7651883"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Année Academique :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="340" y="170" width="118" height="20" backcolor="#3300CC" uuid="16c992e5-7b8a-492c-a7e5-6291df878a6d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_annee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="9" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="290" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="12" width="555" height="177" uuid="248147ef-767e-4d2e-a8b9-b5c470a7acfb"/>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="49" width="555" height="1" uuid="cda06fac-0497-40be-80c4-375c7185a1c1"/>
+			</line>
+			<line>
+				<reportElement x="220" y="14" width="1" height="175" uuid="a70e8a67-62e7-499a-a8ff-590fadd6f54b"/>
+			</line>
+			<line>
+				<reportElement x="300" y="13" width="1" height="176" uuid="0c8d195f-b6ce-4dad-9a72-d655d667cdd7"/>
+			</line>
+			<line>
+				<reportElement x="405" y="13" width="1" height="176" uuid="34ec6a19-951b-4140-be5c-830a2418e391"/>
+			</line>
+			<line>
+				<reportElement x="482" y="12" width="1" height="177" uuid="40675024-3c8d-4f1f-bbb1-cabc81347899"/>
+			</line>
+			<staticText>
+				<reportElement x="11" y="13" width="100" height="16" uuid="c62e0d20-9d5f-4fdc-8480-7cbd917845aa"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MODULE DE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="33" width="100" height="16" uuid="3cb2b3b3-2100-4439-be2f-3abf7123ee42"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="13" width="80" height="16" uuid="2cba7eca-4ef8-41ba-8857-fa4f15659dce"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE DE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="35" width="80" height="16" uuid="2a5bc8e7-d55b-4553-a099-a246828a765b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERSONNE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="13" width="100" height="15" uuid="b0de34b2-6e36-4ba7-98f9-355e38036208"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TARIF ANNUEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="33" width="100" height="15" uuid="595d9069-fcc2-42cd-b8be-89edb185b0e7"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAR PERSONNE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="13" width="65" height="16" uuid="c07b4be8-d86b-4ed7-af53-46d925d10c27"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="29" width="65" height="16" uuid="d63120f8-747e-4d0d-98a0-84216f5788da"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D'ANNEES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="12" width="72" height="16" uuid="f2adedc4-f84d-4ca1-bc26-c1c33a1f4ec0"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="33" width="72" height="16" uuid="fa461bca-0e99-486b-b8a5-62d1e38a24ce"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="51" width="210" height="19" uuid="10ece6bd-50e5-49c4-b093-8806b5421b91"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMATION SPECIALISEE VERS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="11" y="70" width="100" height="20" uuid="fac5c755-23dd-4bab-8d04-7fd431c1fa46"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_filiere}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="70" width="86" height="20" uuid="c28af4e8-9184-4164-883b-ffef6cbcaf06"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inscription_classe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="240" y="127" width="36" height="16" uuid="428b564d-598b-4339-bc12-d5f5c8c338fa"/>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="422" y="127" width="36" height="16" uuid="22a0a034-1eee-4954-9eed-3e650c13f4b1"/>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="101" width="189" height="19" uuid="1d0cf668-cc7c-46e6-b4ec-f0cdd583864d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FRAIS D'INSCRIPTION :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="128" width="189" height="19" uuid="6b8a44bd-2ce0-4222-86f5-12e915b8228b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FRAIS ACADEMIQUE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="301" y="100" width="100" height="20" uuid="95a1ae73-2b07-475e-b54f-3d331e585a3c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{inscription_fraisIns}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="301" y="127" width="100" height="20" uuid="baeffa5b-b3d8-431a-8063-5c5b7d0d13fa"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{inscription_fraisAca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="100" width="72" height="20" uuid="aa020ee5-6ea4-43d3-8269-ae7a83c0eb27"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{inscription_fraisIns}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="120" width="72" height="20" uuid="b969cf9a-fcad-4a1c-b2bb-2bd8e0d1a110"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{inscription_fraisAca}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="159" width="555" height="1" uuid="054612a3-118f-478e-b8a6-2d11d3843b0f"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="160" width="189" height="19" uuid="f1f115f3-8e6e-4ebc-b902-a55a93c845aa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL HT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="234" width="129" height="25" uuid="4ef86715-3a41-434f-8d02-3889f3b047e3"/>
+				<textElement>
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[POUR ACQUIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="234" width="110" height="21" uuid="499a5eb1-aa43-4b94-a48f-e5300499e405"/>
+				<textElement>
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[TECHNOLAB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="189" width="537" height="25" uuid="2f0e5a15-efc2-4f03-8d73-6b2540c7fd65"/>
+				<textElement>
+					<font size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[ARRETE LA PRESENTE FACTURE A LA SOMME DE :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="0" width="537" height="25" uuid="25d86f30-e1f3-4848-ab13-dc073a887518"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Agrément Création : N°0699/98 MESSRS - Ouvertures: N° 1529/99 6 2285 Systeme LMD - TEL 76 55 27 39]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="21" width="537" height="25" uuid="83afdc89-52e9-486d-867f-cb18514875ca"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[BP : E3123 - TEL : 20 29 19 44 - FAX : 20 29 30 66 - Site : www.technolab-ista.com/ Email : technolaba@gmail]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

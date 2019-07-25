@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="76b19422-81ef-4859-8b2d-005f002c1b9e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     etatetudiant.`id` AS etatetudiant_id,
+     etatetudiant.`nom` AS etatetudiant_nom,
+     etatetudiant.`prenom` AS etatetudiant_prenom,
+     etatetudiant.`classe` AS etatetudiant_classe,
+     etatetudiant.`filiere` AS etatetudiant_filiere,
+     etatetudiant.`paiement` AS etatetudiant_paiement,
+     etatetudiant.`Dette` AS etatetudiant_Dette
+FROM
+     `etatetudiant` etatetudiant]]>
+	</queryString>
+	<field name="etatetudiant_id" class="java.lang.Integer"/>
+	<field name="etatetudiant_nom" class="java.lang.String"/>
+	<field name="etatetudiant_prenom" class="java.lang.String"/>
+	<field name="etatetudiant_classe" class="java.lang.String"/>
+	<field name="etatetudiant_filiere" class="java.lang.String"/>
+	<field name="etatetudiant_paiement" class="java.lang.Integer"/>
+	<field name="etatetudiant_Dette" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="58" y="0" width="484" height="33" uuid="1f0134ef-33d3-492c-994c-f9cee40f8920"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Institut Supérieur de Technologie Appliquées]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="33" width="484" height="41" uuid="387137de-4543-4acd-8acc-5c05ae51b10c"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[( Techno LAB - ISTA )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="74" width="542" height="20" backcolor="#9900FF" uuid="5aaf91af-cacc-4689-b3b5-765d11385ace"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Formation continue et specialisée, Expertise, fourniture et Presentations en Nouvelles Technologies Techniques Commerciales]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="325" y="3" width="58" height="20" uuid="1dbf987d-089f-4bca-af99-15883f548fc8"/>
+				<text><![CDATA[Bamako, le ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="23" width="456" height="23" uuid="ad431d54-a3c3-4176-bc08-f06109ed64a7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Listes des payement en retards]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="396" y="3" width="100" height="20" uuid="97fc1e9a-af50-468a-bcb2-0f676e95cb41"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="49" width="56" height="20" uuid="7ce90d56-6788-42ff-9f61-4c09e2877c36"/>
+				<text><![CDATA[NOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="49" width="56" height="20" uuid="92c05bb3-d00a-41a6-a8f4-748cbbd6a59d"/>
+				<text><![CDATA[PRENOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="49" width="56" height="20" uuid="589650c8-a5ec-4211-b92e-4146b528d55c"/>
+				<text><![CDATA[CLASSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="49" width="56" height="20" uuid="34d8521a-591f-4892-98a4-0e51c4f0033f"/>
+				<text><![CDATA[FILIERE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="49" width="62" height="20" uuid="fb92e665-b6d6-48bb-a9ee-f3d448069918"/>
+				<text><![CDATA[PAIEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="49" width="62" height="20" uuid="995013b1-7174-4f80-b0dd-81567c776188"/>
+				<text><![CDATA[DETTE]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="4" y="0" width="550" height="20" uuid="248147ef-767e-4d2e-a8b9-b5c470a7acfb"/>
+			</rectangle>
+			<textField>
+				<reportElement x="21" y="0" width="56" height="20" uuid="1284a72b-fa02-400d-b3ae-be110e4a5a7d"/>
+				<textFieldExpression><![CDATA[$F{etatetudiant_nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="0" width="56" height="20" uuid="6322c9e0-4a98-439f-abc5-71499038ff87"/>
+				<textFieldExpression><![CDATA[$F{etatetudiant_prenom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="192" y="0" width="56" height="20" uuid="dda9194b-5b6b-4537-87dc-e1b3daa4f5ec"/>
+				<textFieldExpression><![CDATA[$F{etatetudiant_classe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="0" width="56" height="20" uuid="c039b47b-67a7-4346-a538-ad40e1c81f0a"/>
+				<textFieldExpression><![CDATA[$F{etatetudiant_filiere}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="63" height="20" uuid="603b9f50-68f1-4b73-9055-d6b7e439675c"/>
+				<textFieldExpression><![CDATA[$F{etatetudiant_paiement}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="479" y="0" width="62" height="20" uuid="fce08a3a-5508-462a-86b2-83f39302f95d"/>
+				<textFieldExpression><![CDATA[$F{etatetudiant_Dette}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="0" width="537" height="25" uuid="25d86f30-e1f3-4848-ab13-dc073a887518"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Agrément Création : N°0699/98 MESSRS - Ouvertures: N° 1529/99 6 2285 Systeme LMD - TEL 76 55 27 39]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="21" width="537" height="25" uuid="83afdc89-52e9-486d-867f-cb18514875ca"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[BP : E3123 - TEL : 20 29 19 44 - FAX : 20 29 30 66 - Site : www.technolab-ista.com/ Email : technolaba@gmail]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
