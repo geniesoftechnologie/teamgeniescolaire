@@ -40,10 +40,8 @@ public class UserForm extends javax.swing.JInternalFrame {
         jTable1.setShowGrid(true);
         jTable1.setGridColor(Color.YELLOW);
         jTable1.setSelectionBackground(Color.lightGray);
-        
         JTableHeader th = jTable1.getTableHeader();
         th.setForeground(Color.BLUE);
-        
         list_cat();
     }
 
@@ -451,9 +449,7 @@ public class UserForm extends javax.swing.JInternalFrame {
             lcat.get(i).getPrenom(),
             lcat.get(i).getLogin(),
             lcat.get(i).getPassword()
-        }
-                
-                );
+        });
     }
     }
   private void vider(){

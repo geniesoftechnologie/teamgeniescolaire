@@ -30,8 +30,8 @@ public class Loginform extends javax.swing.JFrame {
     public Loginform() {
         initComponents();
         this.setLocationRelativeTo(null);
-        txt_username.setText("Admin");
-        txt_password.setText("123");
+        //this.setExtendedState(MAXIMIZED_BOTH);
+       
     }
 
     /**
@@ -356,12 +356,11 @@ public class Loginform extends javax.swing.JFrame {
             mcf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             mcf.nameConnect.setText(rs.getString(2));
             this.dispose();
-                } else if(rs.getString("profil").equals("Agent")){ 
-                
+            }else{ 
                 // get the current user id
             AcceuilForm.currentUserId = rs.getInt("idv");
             System.out.println(rs.getInt("idv")+"From Login");
-            AcceuilForm mcf = new AcceuilForm();
+            AgentAccueil mcf = new AgentAccueil();
             mcf.setVisible(true);
             mcf.pack();
             mcf.setLocationRelativeTo(null);

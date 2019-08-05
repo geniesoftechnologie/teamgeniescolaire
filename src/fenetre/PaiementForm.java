@@ -173,8 +173,7 @@ public class PaiementForm extends javax.swing.JInternalFrame {
         jLabel7.setText("filiere :");
         jLabel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txt_etu_id.setBackground(new java.awt.Color(51, 0, 204));
-        txt_etu_id.setForeground(new java.awt.Color(255, 0, 0));
+        txt_etu_id.setForeground(new java.awt.Color(255, 102, 0));
         txt_etu_id.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txt_etu_id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -498,9 +497,8 @@ public class PaiementForm extends javax.swing.JInternalFrame {
         jLabel12.setText("Recherche :");
         jLabel12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txt_id_paie.setBackground(new java.awt.Color(102, 0, 255));
         txt_id_paie.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        txt_id_paie.setForeground(new java.awt.Color(255, 51, 0));
+        txt_id_paie.setForeground(new java.awt.Color(255, 102, 0));
         txt_id_paie.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N

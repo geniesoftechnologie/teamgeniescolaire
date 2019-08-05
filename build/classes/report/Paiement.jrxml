@@ -24,7 +24,7 @@ FROM
 	<field name="paiement_classe" class="java.lang.String"/>
 	<field name="paiement_filiere" class="java.lang.String"/>
 	<field name="paiement_annee" class="java.lang.String"/>
-	<field name="paiement_montant" class="java.lang.String"/>
+	<field name="paiement_montant" class="java.lang.Integer"/>
 	<field name="paiement_dateIns" class="java.sql.Date"/>
 	<background>
 		<band splitType="Stretch"/>
@@ -215,6 +215,11 @@ FROM
 			</textField>
 			<textField>
 				<reportElement x="459" y="107" width="83" height="20" uuid="95cce512-872e-45a7-b439-769c821e6497"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{paiement_montant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="169" width="83" height="20" uuid="42abcf20-bf2a-4ba7-8c7d-d867f91cf535"/>
 				<textElement textAlignment="Center"/>
 				<textFieldExpression><![CDATA[$F{paiement_montant}]]></textFieldExpression>
 			</textField>

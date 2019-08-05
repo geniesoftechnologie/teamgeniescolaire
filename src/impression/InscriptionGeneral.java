@@ -24,7 +24,7 @@ public class InscriptionGeneral {
     public void afficherReport(int txt_id_etu){
         int numc = txt_id_etu;
         try{
-            JasperDesign jd = JRXmlLoader.load("src\\report\\Inscription.jrxml");
+            JasperDesign jd = JRXmlLoader.load("src\\report\\InscriptionG.jrxml");
             String sql ="SELECT\n"+
                     "inscription.`id` AS inscription_id,\n"+
                     "inscription.`id_etu` AS inscription_id_etu,\n"+

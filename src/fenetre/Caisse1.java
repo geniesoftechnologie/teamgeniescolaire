@@ -172,8 +172,6 @@ public class Caisse1 extends javax.swing.JInternalFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
@@ -833,7 +831,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
         jPanel18Layout.setHorizontalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(57, 57, 57))
         );
@@ -927,7 +925,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
-                .addContainerGap(47, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
@@ -1021,7 +1019,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                .addContainerGap(84, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78))
         );
@@ -1161,7 +1159,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(montant_total_dif1)
                     .addComponent(lb_montant_vente8, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, -1, -1));
@@ -1233,7 +1231,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1246,48 +1244,33 @@ public class Caisse1 extends javax.swing.JInternalFrame {
 
         jButton6.setBackground(new java.awt.Color(255, 0, 0));
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Delete");
+        jButton6.setText("supprimer");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 260, -1, -1));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 260, 100, -1));
 
         jButton7.setBackground(new java.awt.Color(102, 102, 255));
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Edit");
+        jButton7.setText("modifier");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 260, -1, -1));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, 100, -1));
 
         jButton8.setBackground(new java.awt.Color(51, 255, 51));
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Add");
+        jButton8.setText("ajouter");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 260, -1, -1));
-
-        jButton9.setBackground(new java.awt.Color(0, 102, 102));
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Print");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 260, -1, -1));
-
-        jButton10.setBackground(new java.awt.Color(255, 204, 204));
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Clear");
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 260, -1, -1));
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, 80, -1));
 
         jSeparator2.setBackground(new java.awt.Color(255, 0, 0));
         jSeparator2.setOpaque(true);
@@ -1323,7 +1306,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
                 .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 50, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1461,9 +1444,9 @@ public class Caisse1 extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        int index = jTable1.getSelectedRow();
+        int index = jTable2.getSelectedRow();
         if(index >= 0){
-            int id = (int) jTable1.getValueAt(index, 0);
+            int id = (int) jTable2.getValueAt(index, 0);
             DepenseDao cdao = new DepenseDao();
             cdao.supprimer(id);
             JOptionPane.showMessageDialog(null, "Depense supprimé...");
@@ -1544,33 +1527,9 @@ public class Caisse1 extends javax.swing.JInternalFrame {
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        try{
-            JasperDesign jd = JRXmlLoader.load("report\\reportDepense.jrxml");
-            String sql = "SELECT\n"+
-            "depense.`id` AS depense_id,\n"+
-            "depense.`motif` AS depense_motif,\n"+
-            "depense.`montant` AS depense_montant,\n"+
-            "depense.`dated` AS depense_dated\n"+
-            "FROM\n"+
-            "`depense` depense\n";
-
-            System.out.println("Query");
-
-            JRDesignQuery newQuery = new JRDesignQuery();
-            newQuery.setText(sql);
-            jd.setQuery(newQuery);
-            net.sf.jasperreports.engine.JasperReport jasperReport = JasperCompileManager.compileReport(jd);
-            JasperPrint jasperprint = JasperFillManager.fillReport(jasperReport,null, Connect.getInstance());
-            JasperViewer.viewReport(jasperprint, false);
-        }catch(Exception ex){
-            JOptionPane.showMessageDialog(null, ex.getMessage(),"Messege", JOptionPane.PLAIN_MESSAGE);
-        }
-    }//GEN-LAST:event_jButton9ActionPerformed
-
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
         int index = jTable2.getSelectedRow();
-        int idu = (int) jTable1.getValueAt(index, 0);
+        int idu = (int) jTable2.getValueAt(index, 0);
         DepenseDao ddao = new DepenseDao();
         Depense d = ddao.rechercher(idu);
         if(d!=null){
@@ -1588,7 +1547,6 @@ public class Caisse1 extends javax.swing.JInternalFrame {
     private com.toedter.calendar.JDateChooser date_dp;
     private com.toedter.calendar.JDateChooser date_dp1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -1596,7 +1554,6 @@ public class Caisse1 extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1718,7 +1675,7 @@ public class Caisse1 extends javax.swing.JInternalFrame {
       montant_total_reserhd1.setText("");
       montant_total_dif1.setText("");
       montant_total_dep1.setText("");
-      DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+      DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
       int n = model.getRowCount();
       for(int i = n-1; i>=0; --i){
           model.removeRow(i);

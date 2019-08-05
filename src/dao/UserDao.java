@@ -89,7 +89,7 @@ public class UserDao extends Dao <User>{
         User obj = new User();
         ResultSet result;
         try {
-            result = this.connect.createStatement().executeQuery("SELECT * FROM vendeur where profil ='Agent' ");
+            result = this.connect.createStatement().executeQuery("SELECT * FROM vendeur");
             while(result.next()){
             obj.setIdu(result.getInt("idv"));
             obj.setNom(result.getString("nom"));
@@ -107,28 +107,7 @@ public class UserDao extends Dao <User>{
         return user;
     }
     
-    public List<User> listea() {
-        List<User> user = new ArrayList();
-        User obj = new User();
-        ResultSet result;
-        try {
-            result = this.connect.createStatement().executeQuery("SELECT * FROM vendeur where profil ='Administrateur' ");
-            while(result.next()){
-            obj.setIdu(result.getInt("idv"));
-            obj.setNom(result.getString("nom"));
-            obj.setPrenom(result.getString("prenom"));
-            obj.setLogin(result.getString("login"));
-            obj.setPassword(result.getString("pasword"));
-            obj.setProfil(result.getString("profil"));
-            user.add(obj);
-            obj = new User();   
-            }
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return user;
-    }
+   
     
     
     }

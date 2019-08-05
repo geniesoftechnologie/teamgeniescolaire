@@ -4,12 +4,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/impression/InscriptionReport.java</file>
-            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/RetartPaie.java</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/BulletinForm.java</file>
             <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/Loginform.java</file>
-            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/impression/ListeDesEleves.java</file>
             <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/AcceuilForm.java</file>
-            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/dao/EtatEtudiantDao.java</file>
-            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/InscriptionForm.java</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/impression/InscriptionGeneral.java</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/PaiementForm.java</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/report/InscriptionG.jrxml</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/report/PaiementG.jrxml</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/RetartPaie.java</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/report/Paiement.jrxml</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/fenetre/AgentAccueil.java</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/report/Inscription.jrxml</file>
+            <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/impression/PaiementGeneral.java</file>
             <file>file:/C:/Users/HP/Documents/3%20genie%20logiciel/JAVA/GestionScolarite/src/impression/ListeDesRetards.java</file>
         </group>
     </open-files>

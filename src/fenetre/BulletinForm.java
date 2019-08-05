@@ -382,7 +382,6 @@ public class BulletinForm extends javax.swing.JInternalFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel14)
                             .addComponent(java, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -494,8 +493,7 @@ public class BulletinForm extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(Table1);
 
-        txt_etu_id.setBackground(new java.awt.Color(102, 0, 255));
-        txt_etu_id.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txt_etu_id.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txt_etu_id.setForeground(new java.awt.Color(255, 51, 0));
         txt_etu_id.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -657,8 +655,7 @@ public class BulletinForm extends javax.swing.JInternalFrame {
         jLabel12.setText("Recherche :");
         jLabel12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        txt_id_paie.setBackground(new java.awt.Color(102, 0, 255));
-        txt_id_paie.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txt_id_paie.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txt_id_paie.setForeground(new java.awt.Color(255, 51, 0));
         txt_id_paie.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 

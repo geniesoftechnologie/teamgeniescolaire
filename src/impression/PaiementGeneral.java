@@ -24,7 +24,7 @@ public class PaiementGeneral {
     public void afficherReport(int txt_id_etu){
         int numc = txt_id_etu;
         try{
-            JasperDesign jd = JRXmlLoader.load("src\\report\\Paiement.jrxml");
+            JasperDesign jd = JRXmlLoader.load("src\\report\\PaiementG.jrxml");
              String sql ="SELECT\n"+
                      "paiement.`id` AS paiement_id,\n"+
                      "paiement.`id_etu` AS paiement_id_etu,\n"+
